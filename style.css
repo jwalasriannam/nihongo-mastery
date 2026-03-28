@@ -1,0 +1,94 @@
+root {
+    --jp-red: #bc002d;
+    --jp-white: #ffffff;
+    --hover-bg: #f0f0f0;
+}
+
+body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; line-height: 1.6; }
+
+.container { padding: 40px; max-width: 1200px; margin: auto; }
+
+/* Hero Section with Japanese Flag Vibe */
+.hero-section {
+    height: 60vh;
+    background: radial-gradient(circle, var(--jp-red) 30%, var(--jp-white) 31%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+}
+
+.intro-grid { display: flex; gap: 20px; align-items: center; }
+.image-gallery img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
+
+/* Culture Background */
+.culture-bg { background: #f9f9f9; padding: 50px 0; border-top: 5px solid var(--jp-red); }
+
+/* Level Cards & Hover Logic */
+.levels-container { text-align: center; padding: 50px; }
+.level-nav { display: flex; justify-content: center; gap: 20px; }
+
+.level-card {
+    background: white;
+    border: 2px solid var(--jp-red);
+    padding: 20px;
+    width: 150px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.level-card:hover { background: var(--jp-red); color: white; }
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0; margin: 0;
+    color: #333;
+    z-index: 10;
+}
+
+.level-card:hover .dropdown-menu { display: block; }
+
+.dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li:hover { background: #ffebee; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+th { background-color: var(--jp-red); color: white; }
+tr:hover { background-color: #f5f5f5; }
+/* Apply this to your body to make it a flex container */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Takes up full window height */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* This pushes the footer to the bottom */
+main {
+  flex: 1; 
+  padding: 20px;
+}
+
+footer {
+  background-color: #dd131e; /* Dark professional blue */
+  color: rgb(19, 19, 19);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  border-top: 3px solid #3498db;
+}
