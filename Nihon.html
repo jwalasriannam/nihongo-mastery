@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLPT Master & Japanese Culture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="overlay">
+            <h1>NIHONGO MASTERY</h1>
+            <p>Your journey from N5 to N1 starts here.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="jlpt-intro" class="container">
+            <h2>JLPT Overview</h2>
+            <P>The JLPT (Japanese-Language Proficiency Test) is the worldwide standard for measuring Japanese ability.</P>
+            <p>The JLPT has five levels. N5 is the easiest, and N1 is the most difficult.</p>
+            <table class="levels-table">
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Goal & Proficiency</th>
+                    <th>Kanji (Approx.)</th>
+                    <th>Vocabulary (Approx.)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #fdf2f2;">
+                    <td><strong>N5</strong></td>
+                    <td><strong>Beginner:</strong> Basic sentences, Hiragana, Katakana, and basic Kanji.</td>
+                    <td>100</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td><strong>N4</strong></td>
+                    <td><strong>Elementary:</strong> Basic daily topics and slightly more complex grammar.</td>
+                    <td>300</td>
+                    <td>1,500</td>
+                </tr>
+                <tr>
+                    <td><strong>N3</strong></td>
+                    <td><strong>Intermediate:</strong> Bridge between basic and business Japanese. Understands daily conversation.</td>
+                    <td>600</td>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <td><strong>N2</strong></td>
+                    <td><strong>Pre-Advanced:</strong> Business level. Can read newspapers and understand complex topics.</td>
+                    <td>1,000</td>
+                    <td>6,000</td>
+                </tr>
+                <tr style="background-color: #fce4e4;">
+                    <td><strong>N1</strong></td>
+                    <td><strong>Advanced:</strong> Native-like fluency. Can understand abstract and professional topics.</td>
+                    <td>2,000</td>
+                    <td>10,000</td>
+                </tr>
+            </tbody>
+        </table>
+            <div class="intro-grid">
+                <div class="text-content">
+                    <h3>Rules & Regulations</h3>
+                    <p>The Japanese-Language Proficiency Test (JLPT) is held worldwide to evaluate Japanese skills. Ensure you have your voucher and valid ID. No electronic devices are permitted during the sections.</p>
+                    <h3>Mark Evaluation</h3>
+                    <p>Scoring is based on Scaled Scores, not raw marks. You must pass every individual section (Language Knowledge, Reading, Listening) to pass the overall exam.</p>
+                </div>
+                <div class="image-gallery">
+                    <img src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=300" alt="Mount Fuji">
+                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=300" alt="Japanese People">
+                </div>
+            </div>
+        </section>
+
+        <section id="culture" class="culture-bg">
+            <div class="container">
+                <h2>Life in Japan</h2>
+                <div class="culture-info">
+                    <p>Japan balances ancient tradition with cutting-edge technology. From the quiet temples of Kyoto to the neon lights of Shibuya, the culture emphasizes respect, punctuality, and seasonal beauty.</p>
+                    <strong>Famous Food:</strong> Sushi, Ramen, Takoyaki, and Wagyu Beef.
+                </div>
+            </div>
+        </section>
+
+        <section class="levels-container">
+            <h2>Study Resources</h2>
+            <div class="level-nav">
+                <div class="level-card" id="n5-card">
+                    <h3>N5</h3>
+                    <ul class="dropdown-menu">
+                        <li onclick="showContent('kanji')">Kanji</li>
+                        <li onclick="showContent('vocab')">Vocabulary</li>
+                        <li onclick="showContent('grammar')">Grammar</li>
+                        <li onclick="showContent('practice')">Practice Quiz</li>
+                    </ul>
+                </div>
+                <div class="level-card"><h3>N4</h3></div>
+                <div class="level-card"><h3>N3</h3></div>
+                <div class="level-card"><h3>N2</h3></div>
+                <div class="level-card"><h3>N1</h3></div>
+            </div>
+        </section>
+
+        <section id="display-area" class="container"></section>
+    </main>
+
+    <script src="script.js"></script>
+    <footer>
+        Thank you for visiting our web page
+    </footer>
+</body>
+</html>
